@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --bg: #f6f3ed;
+  --surface: #fffdf8;
+  --surface-strong: #f0e6d8;
+  --border: #d7c8b2;
+  --text: #1f1a14;
+  --muted: #6a5d4e;
+  --accent: #0d7a69;
+  --accent-strong: #095849;
+  --warning: #b45309;
+  --danger: #b42318;
+}
+
+html,
+body {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top, rgba(13, 122, 105, 0.14), transparent 38%),
+    linear-gradient(180deg, #fbf8f2 0%, #f2ece2 100%);
+  color: var(--text);
+}
+
+body {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+.shell {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255, 253, 248, 0.92);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 40px rgba(31, 26, 20, 0.08);
+}
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-strong);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+

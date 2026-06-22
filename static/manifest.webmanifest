@@ -1,0 +1,10 @@
+{
+  "name": "ReadyKit",
+  "short_name": "ReadyKit",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f3ed",
+  "theme_color": "#0d7a69",
+  "icons": []
+}
+
